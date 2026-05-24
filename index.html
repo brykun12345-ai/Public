@@ -4,20 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Таймер 5 секунд</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏱️</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐷</text></svg>">
 </head>
 <body>
+    <canvas id="particles"></canvas>
+
     <div class="container">
         <div class="logo-area">
-            <div class="logo-placeholder">ЛОГОТИП ИГРЫ</div>
+            <div class="logo-placeholder">
+                <span class="logo-icon">🎮</span>
+                <span class="logo-text">ЛОГОТИП ИГРЫ</span>
+            </div>
         </div>
 
-        <button id="startBtn" class="big-red-btn">
-            <span class="btn-text">НАЖМИ МЕНЯ</span>
-        </button>
+        <div class="btn-wrapper">
+            <div class="btn-ring"></div>
+            <button id="startBtn" class="big-red-btn">
+                <span class="btn-text">НАЖМИ<br>МЕНЯ</span>
+            </button>
+        </div>
 
-        <div id="countdown" class="countdown">5</div>
+        <div class="countdown-wrapper">
+            <div id="countdown" class="countdown">5</div>
+            <div class="countdown-label">секунд</div>
+        </div>
     </div>
 
     <script src="script.js"></script>
